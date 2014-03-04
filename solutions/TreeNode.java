@@ -1,20 +1,27 @@
-package reva.careercup.solutions;
+package reva.java.practice;
 
-public class TreeNode {
+import java.io.Serializable;
+
+import reva.CTCI.soutions.CH_4.*;
+
+public class TreeNode<E> implements Serializable {
 	
-	public int data;
-	public TreeNode leftchild;
-	public TreeNode rightchild;
+	public TreeNode<E> leftchild;
+	public TreeNode<E> rightchild;
+	public E value;
+	public TreeNode<E> parent;
 	
-	public TreeNode(int data) {
-		this.data = data;
-		leftchild = null;
-		rightchild = null;
+	
+	public TreeNode(E value)
+	{
 		
+		this.value = value;
+		this.leftchild = null;
+		this.rightchild= null;
 		
 	}
-	public TreeNode(){
-		
+	public TreeNode()
+	{
 		
 	}
 
